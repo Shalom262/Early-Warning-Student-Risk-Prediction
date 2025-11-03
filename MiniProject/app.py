@@ -29,17 +29,20 @@ st.markdown(
         font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
-    /* Center the main block & give it card feel */
+    /* Main container: bigger margins / breathing room */
     .main .block-container {
-        padding-top: 2rem;
-        padding-bottom: 3rem;
-        max-width: 900px;
+        padding-top: 3.5rem;
+        padding-bottom: 4rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        max-width: 820px;
     }
 
     /* Title styling */
     .app-header {
         text-align: center;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.8rem;
+        margin-top: 0.4rem;
     }
     .app-title {
         font-size: 2.4rem;
@@ -49,11 +52,12 @@ st.markdown(
         -webkit-background-clip: text;
         color: transparent;
         text-shadow: 0 0 25px rgba(56,189,248,0.25);
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.25rem;
     }
     .app-subtitle {
         font-size: 0.98rem;
         color: #9ca3af;
+        margin-top: 0.1rem;
     }
 
     /* Pill badges */
@@ -61,7 +65,7 @@ st.markdown(
         display: flex;
         justify-content: center;
         gap: 0.5rem;
-        margin-top: 0.7rem;
+        margin-top: 0.9rem;
         flex-wrap: wrap;
     }
     .pill {
@@ -78,13 +82,15 @@ st.markdown(
     /* Glass card container */
     .glass-card {
         background: linear-gradient(135deg, rgba(15,23,42,0.84), rgba(17,24,39,0.96));
-        border-radius: 1.25rem;
-        padding: 1.5rem 1.6rem;
+        border-radius: 1.5rem;
+        padding: 1.9rem 2.0rem;
         border: 1px solid rgba(148,163,184,0.32);
         box-shadow:
             0 18px 45px rgba(0,0,0,0.7),
             0 0 0 1px rgba(15,23,42,0.9);
         backdrop-filter: blur(18px);
+        margin-top: 1.6rem;
+        margin-bottom: 2.0rem;
     }
 
     /* Section headings */
@@ -204,6 +210,7 @@ st.markdown(
         padding: 0.55rem 1.3rem;
         box-shadow: 0 10px 24px rgba(15,23,42,0.9);
         transition: all 0.15s ease;
+        margin-top: 0.4rem;
     }
     .stDownloadButton > button:hover {
         border-color: #38bdf8;
@@ -216,10 +223,11 @@ st.markdown(
     /* Metric cards */
     .metric-card {
         border-radius: 1rem;
-        padding: 0.85rem 1rem;
+        padding: 0.9rem 1.1rem;
         background: radial-gradient(circle at top left, rgba(56,189,248,0.13), rgba(15,23,42,0.94));
         border: 1px solid rgba(148,163,184,0.45);
         box-shadow: 0 12px 26px rgba(15,23,42,0.95);
+        margin-top: 0.4rem;
     }
     .metric-label {
         font-size: 0.78rem;
@@ -240,8 +248,8 @@ st.markdown(
 
     /* Info strip */
     .info-strip {
-        margin-top: 0.4rem;
-        padding: 0.7rem 0.85rem;
+        margin-top: 0.9rem;
+        padding: 0.8rem 1.0rem;
         border-radius: 0.9rem;
         border: 1px dashed rgba(148,163,184,0.7);
         background: rgba(15,23,42,0.85);
@@ -254,12 +262,13 @@ st.markdown(
 
     /* Dataframe card */
     .df-wrapper {
-        margin-top: 0.9rem;
-        padding: 0.7rem 0.9rem 0.9rem;
+        margin-top: 1.1rem;
+        padding: 0.8rem 1.0rem 1.0rem;
         border-radius: 1rem;
         border: 1px solid rgba(148,163,184,0.45);
         background: radial-gradient(circle at top right, rgba(129,140,248,0.18), rgba(15,23,42,0.96));
         box-shadow: 0 14px 32px rgba(15,23,42,0.96);
+        margin-bottom: 1.6rem;
     }
     .df-title {
         font-size: 0.86rem;
@@ -271,6 +280,7 @@ st.markdown(
     /* Messages refinement */
     .stAlert {
         border-radius: 0.9rem;
+        margin-top: 0.6rem;
     }
     </style>
     """,
